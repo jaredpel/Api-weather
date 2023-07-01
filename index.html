@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"/>
+    <link rel="stylesheet" href="/assets/css/stylee.css" />
+</head>
+
+<body>
+    <header>
+        <h1 class="title container is-size-1">Weather Dashboard</h1>
+        <h2 class="title container is-size-4">Search</h2>
+    </header>
+    
+    <div class="container">
+      <div class="search-container">
+        <form id="search-form">
+          <label for="city-input">Enter Place</label>
+          <input type="text" class="input" id="city-input" name="city" required/>
+          <button type="submit" class="button">Search</button>
+        </form>
+        <div id="search-history"></div>
+        <button class="button" id="clear-history">Clear</button>
+    </div>
+    
+    <div class="weather-container">
+        <div id="current-weather"></div>
+        <div id="forecast"></div>
+    </div>
+</div>
+
+<script src="./assets/js/script.js"></script>
+</body>
